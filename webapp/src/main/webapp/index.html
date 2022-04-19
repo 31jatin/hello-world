@@ -59,7 +59,7 @@
         <div class="c-credit-card">
           <div class="c-credit-card__card" rv-class-is-backface="creditCard.isBackface">
             <div class="c-credit-card__face c-credit-card__face--front">
-              <span class="c-credit-card__prop c-credit-card__name">{ creditCard.name | rv-value="creditCard.name }</span>
+              <span class="c-credit-card__prop c-credit-card__name">{ creditCard.name | defaultText 'rv-value' }</span>
               <span class="c-credit-card__prop c-credit-card__expire">
                 { creditCard.expireMonth | defaultText '3' }
                 /
